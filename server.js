@@ -48,4 +48,4 @@ app.get('/',(req,res)=>{
     console.log('Working');
 })
 
-app.listen(3001,()=>console.log("Listening"))
+app.listen( process.env.PORT ||3001,()=>console.log("Listening"))
